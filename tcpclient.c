@@ -142,7 +142,7 @@ int main(int argc, char **argv) {
 
         string[fsize] = 0;
 
-        
+
         n = write(sockfd, string, strlen(string));
         if (n < 0) 
          error("ERROR writing to socket");
@@ -157,3 +157,4 @@ int main(int argc, char **argv) {
     close(sockfd);
     return 0;
 }
+
